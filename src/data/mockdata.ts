@@ -8,7 +8,8 @@ export const properties = [
     zip: "Zip 1",
     price: 100000,
     image: "/images/Blue.png",
-    description: "Description 1",
+    description:
+      "ほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげ",
     label: "Label 1",
     href: "/properties/1",
   },
@@ -21,7 +22,8 @@ export const properties = [
     zip: "Zip 2",
     price: 200000,
     image: "/images/Red.png",
-    description: "Description 2",
+    description:
+      "ほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげ",
     label: "Label 2",
     href: "/properties/2",
   },
@@ -34,7 +36,8 @@ export const properties = [
     zip: "Zip 3",
     price: 300000,
     image: "/images/Green.png",
-    description: "Description 3",
+    description:
+      "ほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげ",
     label: "Label 3",
     href: "/properties/3",
   },

@@ -25,6 +25,19 @@ const PropertyCard: React.FC<Props> = ({ property }) => {
             <Text>N’HOUSE</Text>
             <Text mt="-18px">{property.title}</Text>
           </Box>
+          <Text
+            maxW="56%"
+            fontFamily="Noto Sans"
+            color="white"
+            fontSize="14px"
+            fontWeight="700"
+            lineHeight="2"
+            float="right"
+            mt="20px"
+            mr="20px"
+          >
+            {property.description}
+          </Text>
         </Box>
       </Link>
     </>
