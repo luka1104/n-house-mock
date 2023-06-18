@@ -1,7 +1,7 @@
 export const properties = [
   {
     id: 1,
-    title: "Property 1",
+    title: "BLUE",
     address: "Address 1",
     city: "City 1",
     state: "State 1",
@@ -14,7 +14,7 @@ export const properties = [
   },
   {
     id: 2,
-    title: "Property 2",
+    title: "RED",
     address: "Address 2",
     city: "City 2",
     state: "State 2",
@@ -27,7 +27,7 @@ export const properties = [
   },
   {
     id: 3,
-    title: "Property 3",
+    title: "GREEN",
     address: "Address 3",
     city: "City 3",
     state: "State 3",
