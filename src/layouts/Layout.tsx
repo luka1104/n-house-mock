@@ -1,3 +1,5 @@
+import NavFooter from "@/components/NavFooter"
+import Footer from "@/components/NavFooter"
 import { Box, Container } from "@chakra-ui/react"
 import { ReactElement, memo, useEffect, useState } from "react"
 
@@ -12,6 +14,7 @@ const Layout = memo(({ children }: LayoutProps) => {
         <Box w="100%" h="100%">
           {children}
         </Box>
+        <NavFooter />
       </Container>
     </>
   )
