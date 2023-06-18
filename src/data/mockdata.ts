@@ -1,6 +1,6 @@
 export const properties = [
   {
-    id: 1,
+    id: "1",
     title: "BLUE",
     address: "Address 1",
     city: "City 1",
@@ -14,7 +14,7 @@ export const properties = [
     href: "/property/1",
   },
   {
-    id: 2,
+    id: "2",
     title: "RED",
     address: "Address 2",
     city: "City 2",
@@ -28,7 +28,7 @@ export const properties = [
     href: "/property/2",
   },
   {
-    id: 3,
+    id: "3",
     title: "GREEN",
     address: "Address 3",
     city: "City 3",
