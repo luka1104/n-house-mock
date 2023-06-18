@@ -26,7 +26,7 @@ const NavFooter: React.FC = () => {
         <Link href="/mypage" w="100%">
           <Center h="100%" w="100%">
             <VStack gap="8px">
-              {router.pathname.includes("mypage") ? (
+              {router.pathname.includes("house") ? (
                 <Center w="64px" h="32px" bg="#00A7C1" borderRadius="16px">
                   <Image h="24px" color="black" src="/icons/MyPage.png" />
                 </Center>
@@ -34,7 +34,7 @@ const NavFooter: React.FC = () => {
                 <Image h="24px" color="black" src="/icons/MyPage.png" />
               )}
               <Text fontFamily="Roboto" fontSize="12px" lineHeight="1.5" fontWeight="400" color="white">
-                MY PAGE
+                HOUSE
               </Text>
             </VStack>
           </Center>
@@ -42,7 +42,7 @@ const NavFooter: React.FC = () => {
         <Link href="/setting" w="100%">
           <Center h="100%" w="100%">
             <VStack gap="8px">
-              {router.pathname.includes("setting") ? (
+              {router.pathname.includes("key") ? (
                 <Center w="64px" h="32px" bg="#00A7C1" borderRadius="16px">
                   <Image w="24px" src="/icons/Setting.png" />
                 </Center>
@@ -50,7 +50,7 @@ const NavFooter: React.FC = () => {
                 <Image w="24px" src="/icons/Setting.png" />
               )}
               <Text fontFamily="Roboto" fontSize="12px" lineHeight="1.5" fontWeight="400" color="white">
-                SETTING
+                KEY
               </Text>
             </VStack>
           </Center>
