@@ -38,6 +38,21 @@ const PropertyCard: React.FC<Props> = ({ property }) => {
           >
             {property.description}
           </Text>
+          <Text
+            position="absolute"
+            left="0"
+            mt="520px"
+            ml="12px"
+            transform="rotate(-90deg)"
+            transformOrigin={"left top 0"}
+            fontFamily="Oswald"
+            color="white"
+            fontSize="12px"
+            fontWeight="500"
+            lineHeight="1.5"
+          >
+            {property.label}
+          </Text>
         </Box>
       </Link>
     </>

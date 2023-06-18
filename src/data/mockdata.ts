@@ -10,7 +10,7 @@ export const properties = [
     image: "/images/Blue.png",
     description:
       "ほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげ",
-    label: "Label 1",
+    label: "hogehogehogehoge",
     href: "/properties/1",
   },
   {
@@ -24,7 +24,7 @@ export const properties = [
     image: "/images/Red.png",
     description:
       "ほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげ",
-    label: "Label 2",
+    label: "hogehogehogehoge",
     href: "/properties/2",
   },
   {
@@ -38,7 +38,7 @@ export const properties = [
     image: "/images/Green.png",
     description:
       "ほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげ",
-    label: "Label 3",
+    label: "hogehogehogehoge",
     href: "/properties/3",
   },
 ]
