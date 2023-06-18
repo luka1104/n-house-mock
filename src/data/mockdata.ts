@@ -11,7 +11,7 @@ export const properties = [
     description:
       "ほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげ",
     label: "hogehogehogehoge",
-    href: "/properties/1",
+    href: "/property/1",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ export const properties = [
     description:
       "ほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげ",
     label: "hogehogehogehoge",
-    href: "/properties/2",
+    href: "/property/2",
   },
   {
     id: 3,
@@ -39,6 +39,6 @@ export const properties = [
     description:
       "ほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげ",
     label: "hogehogehogehoge",
-    href: "/properties/3",
+    href: "/property/3",
   },
 ]
