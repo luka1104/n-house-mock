@@ -8,7 +8,7 @@ type LayoutProps = Required<{
 const Layout = memo(({ children }: LayoutProps) => {
   return (
     <>
-      <Container maxW="400px" h="100vh" p={0} bgColor="#000000">
+      <Container maxW="440px" h="100vh" p={0} bgColor="#000000">
         <Box w="100%" h="100%">
           {children}
         </Box>
