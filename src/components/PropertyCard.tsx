@@ -40,7 +40,6 @@ const PropertyCard: React.FC<Props> = ({ property }) => {
           </Text>
           <Text
             position="absolute"
-            left="0"
             mt="520px"
             ml="12px"
             transform="rotate(-90deg)"
