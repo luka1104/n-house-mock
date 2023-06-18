@@ -7,7 +7,7 @@ const NavFooter: React.FC = () => {
   return (
     <Box position="fixed" zIndex="200" bottom="0" w="100%" maxW="440px" h="74px" bg="transparent">
       <HStack gap="4px" px="4px" h="100%">
-        <Link href="/home" w="100%">
+        <Link href="/home" w="100%" textDecoration="none !important">
           <Center h="100%" w="100%">
             <VStack gap="8px">
               {router.pathname.includes("home") ? (
@@ -23,7 +23,7 @@ const NavFooter: React.FC = () => {
             </VStack>
           </Center>
         </Link>
-        <Link href="/mypage" w="100%">
+        <Link href="/house" w="100%" textDecoration="none !important">
           <Center h="100%" w="100%">
             <VStack gap="8px">
               {router.pathname.includes("house") ? (
@@ -39,7 +39,7 @@ const NavFooter: React.FC = () => {
             </VStack>
           </Center>
         </Link>
-        <Link href="/setting" w="100%">
+        <Link href="/key" w="100%" textDecoration="none !important">
           <Center h="100%" w="100%">
             <VStack gap="8px">
               {router.pathname.includes("key") ? (
