@@ -15,7 +15,7 @@ const Index: NextPage = () => {
             ほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげ
           </Text>
         </Box>
-        <Link href="/home">
+        <Link href="/home" textDecoration="none !important">
           <Button
             ml="8%"
             mb="50px"

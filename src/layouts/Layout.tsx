@@ -9,7 +9,7 @@ type LayoutProps = Required<{
 
 const Layout = memo(({ children }: LayoutProps) => {
   const router = useRouter()
-  const hideFooter = router.pathname === "/"
+  const hideFooter = router.pathname === "/" || router.pathname === "/property/[propertyId]/purchase"
   return (
     <>
       <Container maxW="440px" h="100%" minH="100vh" p={0} bgColor="#000000">
