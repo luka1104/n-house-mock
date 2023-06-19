@@ -2,8 +2,10 @@ import type { AppProps } from "next/app"
 import { ChakraProvider } from "@chakra-ui/react"
 import Layout from "@/layouts/Layout"
 import { PrivyProvider } from "@privy-io/react-auth"
+import { useRouter } from "next/router"
 
 export default function App({ Component, pageProps }: AppProps) {
+  const router = useRouter()
   return (
     <PrivyProvider
       createPrivyWalletOnLogin
@@ -16,7 +18,9 @@ export default function App({ Component, pageProps }: AppProps) {
         // This configures wallet, email, Google, and Twitter login for your app.
         loginMethods: ["wallet", "email", "google", "apple"],
       }}
-      // onSuccess={() => router.push("/dashboard")}
+      onSuccess={() => {
+        router.pathname === "/property/[propertyId]/purchased" && router.push("/house?propertyId=1")
+      }}
     >
       <ChakraProvider>
         <Layout>
