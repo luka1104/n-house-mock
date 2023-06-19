@@ -52,6 +52,7 @@ const PropertyPage: NextPage = () => {
 
       <Center w="100%" pb="98px">
         <Button
+          isDisabled={propertyId !== "1"}
           color="white"
           fontFamily="Noto Sans"
           mt="20px"
@@ -67,7 +68,7 @@ const PropertyPage: NextPage = () => {
             ready && authenticated ? router.push(`/property/${propertyId}/purchased`) : login()
           }}
         >
-          購入する
+          {propertyId !== "1" ? "Coming Soon..." : "予約する"}
         </Button>
       </Center>
     </>
