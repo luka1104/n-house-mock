@@ -8,8 +8,9 @@ type Props = {
 const PropertyReservationCard: React.FC<Props> = ({ property }) => {
   return (
     <VStack
+      mt="20px"
       w="100%"
-      h="560px"
+      h="72.5vh"
       bgSize="cover"
       maxW="440px"
       borderRadius="16px"
@@ -23,10 +24,10 @@ const PropertyReservationCard: React.FC<Props> = ({ property }) => {
         fontWeight="700"
         lineHeight="1.5"
         fontStyle="normal"
-        float="right"
         textAlign="right"
         mt="20px"
         mr="20px"
+        ml="auto"
       >
         <Text>N’HOUSE</Text>
         <Text mt="-18px">{property.title}</Text>
