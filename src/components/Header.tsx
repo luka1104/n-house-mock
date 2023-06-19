@@ -1,7 +1,9 @@
 import { Box, HStack, Image, Link, Text } from "@chakra-ui/react"
+import { usePrivy } from "@privy-io/react-auth"
 import React from "react"
 
 const Header: React.FC = () => {
+  const { ready, authenticated, user, login, logout } = usePrivy()
   return (
     <HStack
       position="fixed"
@@ -20,7 +22,7 @@ const Header: React.FC = () => {
         <Text>N'HOUSE</Text>
       </Link>
       <Link w="24px" href="/home" mr="12px" textDecoration="none !important">
-        <Image w="24px" my="20px" src="/icons/Account.png" />
+        <Image w="24px" my="20px" src={authenticated ? "/icons/AccountActive.png" : "/icons/Account.png"} />
       </Link>
     </HStack>
   )
