@@ -14,7 +14,7 @@ import {
   Avatar,
 } from "@chakra-ui/react"
 import { NextPage } from "next"
-import React from "react"
+import React, { useState } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Pagination } from "swiper"
 import "swiper/css"
@@ -45,12 +45,7 @@ const House: NextPage = () => {
             </Box>
           </HStack>
 
-          <ModalFooter>
-            <Button colorScheme="blue" mr={3} onClick={onClose}>
-              Close
-            </Button>
-            <Button variant="ghost">Secondary Action</Button>
-          </ModalFooter>
+          <Box mt="20px" w="100%" mx="15px"></Box>
         </ModalContent>
       </Modal>
       <Swiper modules={[Pagination]} spaceBetween={50} slidesPerView={1} pagination={{ clickable: true }}>
