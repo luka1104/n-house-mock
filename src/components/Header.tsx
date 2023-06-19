@@ -13,14 +13,14 @@ const Header: React.FC = () => {
       bg="white"
       justifyContent="space-between"
     >
-      <Link href="/home" w="100%" textDecoration="none !important">
-        <Image py="20px" pl="16px" src="/icons/Setting.png" />
+      <Link href="/home" w="24px" ml="16px" textDecoration="none !important">
+        <Image w="24px" my="20px" src="/icons/Setting.png" />
       </Link>
-      <Link href="/home" w="100%" textDecoration="none !important">
+      <Link href="/home" textDecoration="none !important">
         <Text>N'HOUSE</Text>
       </Link>
-      <Link href="/home" w="100%" textDecoration="none !important">
-        <Image py="20px" pr="12px" src="/icons/Account.png" />
+      <Link w="24px" href="/home" mr="12px" textDecoration="none !important">
+        <Image w="24px" my="20px" src="/icons/Account.png" />
       </Link>
     </HStack>
   )
