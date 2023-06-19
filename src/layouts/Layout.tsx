@@ -15,7 +15,7 @@ const Layout = memo(({ children }: LayoutProps) => {
     <>
       <Container maxW="440px" h="100%" minH="100vh" p={0} bgColor="#000000">
         {hideNav ? null : <Header />}
-        <Box pt="64px" w="100%" h="100%">
+        <Box pt={hideNav ? "0px" : "64px"} w="100%" h="100%">
           {children}
         </Box>
         {hideNav ? null : <NavFooter />}

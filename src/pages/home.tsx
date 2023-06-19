@@ -6,7 +6,7 @@ import React from "react"
 const Home: NextPage = () => {
   return (
     <>
-      <Flex flexDirection="column" gap="32px" w="100%">
+      <Flex mt="20px" flexDirection="column" gap="32px" w="100%">
         {properties.map((property) => (
           <PropertyCard property={property} />
         ))}
