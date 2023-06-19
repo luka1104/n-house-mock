@@ -73,6 +73,9 @@ const Header: React.FC = () => {
                 lineHeight="1.5"
                 fontWeight="500"
                 color="black"
+                onClick={() => {
+                  navigator.clipboard.writeText(user?.wallet?.address as string)
+                }}
               >
                 コピーする
               </Text>
