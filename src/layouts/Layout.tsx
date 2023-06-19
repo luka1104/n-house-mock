@@ -2,6 +2,7 @@ import NavFooter from "@/components/NavFooter"
 import { Box, Container } from "@chakra-ui/react"
 import { ReactElement, memo, useEffect, useState } from "react"
 import { useRouter } from "next/router"
+import Header from "@/components/Header"
 
 type LayoutProps = Required<{
   readonly children: ReactElement
@@ -9,14 +10,15 @@ type LayoutProps = Required<{
 
 const Layout = memo(({ children }: LayoutProps) => {
   const router = useRouter()
-  const hideFooter = router.pathname === "/" || router.pathname === "/property/[propertyId]/purchased"
+  const hideNav = router.pathname === "/" || router.pathname === "/property/[propertyId]/purchased"
   return (
     <>
       <Container maxW="440px" h="100%" minH="100vh" p={0} bgColor="#000000">
-        <Box w="100%" h="100%">
+        {hideNav ? null : <Header />}
+        <Box pt="64px" w="100%" h="100%">
           {children}
         </Box>
-        {hideFooter ? null : <NavFooter />}
+        {hideNav ? null : <NavFooter />}
       </Container>
     </>
   )
