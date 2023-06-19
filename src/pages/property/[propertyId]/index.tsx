@@ -65,7 +65,7 @@ const PropertyPage: NextPage = () => {
           borderRadius="0px"
           _hover={{ bg: "#00A7C1" }}
           onClick={() => {
-            ready && authenticated ? router.push(`/property/${propertyId}/purchased`) : login()
+            ready && authenticated ? router.push("/house?propertyId=1") : login()
           }}
         >
           {propertyId !== "1" ? "Coming Soon..." : "予約する"}
