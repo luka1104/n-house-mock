@@ -25,6 +25,10 @@ const Header: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   console.log("user", user)
 
+  const logoutHandler = () => {
+    logout()
+    window.location.reload()
+  }
   return (
     <>
       <HStack
@@ -97,7 +101,7 @@ const Header: React.FC = () => {
                 h="56px"
                 borderRadius="0px"
                 _hover={{ bg: "#00A7C1" }}
-                onClick={logout}
+                onClick={logoutHandler}
               >
                 ログアウトする
               </Button>
