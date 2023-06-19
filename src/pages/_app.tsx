@@ -3,8 +3,6 @@ import { ChakraProvider } from "@chakra-ui/react"
 import Layout from "@/layouts/Layout"
 import { PrivyProvider } from "@privy-io/react-auth"
 import { useRouter } from "next/router"
-import { LocalizationProvider } from "@mui/x-date-pickers"
-import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs"
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
@@ -25,11 +23,9 @@ export default function App({ Component, pageProps }: AppProps) {
       }}
     >
       <ChakraProvider>
-        <LocalizationProvider dateAdapter={AdapterDayjs}>
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
-        </LocalizationProvider>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </ChakraProvider>
     </PrivyProvider>
   )
