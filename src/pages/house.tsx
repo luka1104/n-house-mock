@@ -7,14 +7,10 @@ import {
   Modal,
   ModalOverlay,
   ModalContent,
-  ModalHeader,
   ModalFooter,
-  ModalBody,
-  ModalCloseButton,
   Button,
   HStack,
   Image,
-  Center,
 } from "@chakra-ui/react"
 import { NextPage } from "next"
 import React from "react"
@@ -36,8 +32,6 @@ const House: NextPage = () => {
               予約内容の入力
             </Text>
           </HStack>
-
-          <ModalBody>{/* <Lorem count={2} /> */}</ModalBody>
 
           <ModalFooter>
             <Button colorScheme="blue" mr={3} onClick={onClose}>
