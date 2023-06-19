@@ -5,9 +5,10 @@ import { useRouter } from "next/router"
 
 type Props = {
   property: any
+  onOpen: () => void
 }
 
-const PropertyReservationCard: React.FC<Props> = ({ property }) => {
+const PropertyReservationCard: React.FC<Props> = ({ property, onOpen }) => {
   const { ready, authenticated, login } = usePrivy()
   const router = useRouter()
   return (
@@ -51,7 +52,7 @@ const PropertyReservationCard: React.FC<Props> = ({ property }) => {
           borderRadius="0px"
           _hover={{ bg: "white" }}
           onClick={() => {
-            ready && authenticated ? router.push("/house?propertyId=1") : login()
+            ready && authenticated ? onOpen() : login()
           }}
         >
           {property.id !== "1" ? "Coming Soon..." : "予約する"}
