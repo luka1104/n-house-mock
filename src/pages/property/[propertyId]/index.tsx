@@ -42,13 +42,13 @@ const PropertyPage: NextPage = () => {
         </Text>
       </Box>
       <Image src="/images/Detail2.png" />
-      <Box p="24px" pb="98px">
+      <Box p="24px">
         <Text fontFamily="Noto Sans" color="white" fontSize="14px" fontWeight="700" lineHeight="2">
           この素晴らしい建物は、壮大な海の眺めを誇っています。建物の位置は海岸にあり、一歩外に出れば広がる海の景色はまさに絶景です。透明な窓ガラスからは、碧い海とその輝きが目に飛び込んできます。朝は太陽の光が水面に反射し、まばゆい輝きを放ちます。昼間は波の音と風の匂いが心地よく、夕方には美しい夕焼けが海面に広がります。特にバルコニーやテラスから眺めると、壮大な水平線と連続する波が息をのむほどの景色となります。ここでは海鳥の姿や遠くに浮かぶ島々も見ることができます。この建物の魅力的な海の眺めは、忙しい日常を忘れ、リラックスや癒しを求める人々にとって究極の避難所です。豪華な滞在とともに、絶景の海を楽しむ贅沢な時間を過ごすことができます。
         </Text>
       </Box>
       <Link href={router.asPath + "/purchased"} textDecoration="none !important">
-        <Center w="100%">
+        <Center w="100%" pb="98px">
           <Button
             color="white"
             fontFamily="Noto Sans"
