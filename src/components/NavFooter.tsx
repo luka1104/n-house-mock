@@ -28,10 +28,10 @@ const NavFooter: React.FC = () => {
             <VStack gap="8px">
               {router.pathname.includes("house") ? (
                 <Center w="64px" h="32px" bg="#00A7C1" borderRadius="16px">
-                  <Image h="24px" color="black" src="/icons/MyPage.png" />
+                  <Image h="24px" color="black" src="/icons/House.png" />
                 </Center>
               ) : (
-                <Image h="24px" color="black" src="/icons/MyPage.png" />
+                <Image h="24px" color="black" src="/icons/House.png" />
               )}
               <Text fontFamily="Roboto" fontSize="12px" lineHeight="1.5" fontWeight="400" color="white">
                 HOUSE
@@ -44,10 +44,10 @@ const NavFooter: React.FC = () => {
             <VStack gap="8px">
               {router.pathname.includes("key") ? (
                 <Center w="64px" h="32px" bg="#00A7C1" borderRadius="16px">
-                  <Image w="24px" src="/icons/Setting.png" />
+                  <Image w="24px" src="/icons/Key.png" />
                 </Center>
               ) : (
-                <Image w="24px" src="/icons/Setting.png" />
+                <Image w="24px" src="/icons/Key.png" />
               )}
               <Text fontFamily="Roboto" fontSize="12px" lineHeight="1.5" fontWeight="400" color="white">
                 KEY
