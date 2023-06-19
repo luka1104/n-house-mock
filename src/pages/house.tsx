@@ -19,7 +19,7 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Pagination } from "swiper"
 import "swiper/css"
 import "swiper/css/pagination"
-import { DateRangeCalendar, DateRangePicker } from "@mui/x-date-pickers-pro"
+import { DatePicker } from "@mui/x-date-pickers"
 
 const House: NextPage = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -47,7 +47,7 @@ const House: NextPage = () => {
           </HStack>
 
           <Box mt="20px" w="100%" mx="15px">
-            <DateRangePicker localeText={{ start: "Check-in", end: "Check-out" }} />
+            <DatePicker />
           </Box>
         </ModalContent>
       </Modal>
