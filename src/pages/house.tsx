@@ -11,6 +11,7 @@ import {
   Button,
   HStack,
   Image,
+  Avatar,
 } from "@chakra-ui/react"
 import { NextPage } from "next"
 import React from "react"
@@ -31,6 +32,17 @@ const House: NextPage = () => {
             <Text fontSize="16px" fontWeight="700" fontFamily="Noto Sans" lineHeight="1.5">
               予約内容の入力
             </Text>
+          </HStack>
+          <HStack mt="20px" ml="24px" gap="16px">
+            <Avatar w="60px" h="60px" src={properties[0].image} />
+            <Box>
+              <Text fontSize="12px" fontWeight="700" fontFamily="Noto Sans" lineHeight="1.5">
+                N’HOUSE
+              </Text>
+              <Text fontSize="16px" fontWeight="700" fontFamily="Noto Sans" lineHeight="1.5">
+                {properties[0].title}
+              </Text>
+            </Box>
           </HStack>
 
           <ModalFooter>
