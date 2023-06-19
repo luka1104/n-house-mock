@@ -1,11 +1,15 @@
 import React from "react"
 import { Box, Button, Center, Text, VStack } from "@chakra-ui/react"
+import { usePrivy } from "@privy-io/react-auth"
+import { useRouter } from "next/router"
 
 type Props = {
   property: any
 }
 
 const PropertyReservationCard: React.FC<Props> = ({ property }) => {
+  const { ready, authenticated, login } = usePrivy()
+  const router = useRouter()
   return (
     <VStack
       mt="20px"
@@ -34,6 +38,7 @@ const PropertyReservationCard: React.FC<Props> = ({ property }) => {
       </Box>
       <Center w="100%" pb="40px">
         <Button
+          isDisabled={property.id !== "1"}
           color="#00A7C1"
           fontFamily="Noto Sans"
           mt="20px"
@@ -45,9 +50,11 @@ const PropertyReservationCard: React.FC<Props> = ({ property }) => {
           h="56px"
           borderRadius="0px"
           _hover={{ bg: "white" }}
-          // onClick={logoutHandler}
+          onClick={() => {
+            ready && authenticated ? router.push("/house?propertyId=1") : login()
+          }}
         >
-          予約する
+          {property.id !== "1" ? "Coming Soon..." : "予約する"}
         </Button>
       </Center>
     </VStack>

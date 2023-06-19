@@ -23,7 +23,6 @@ import React from "react"
 const Header: React.FC = () => {
   const { ready, authenticated, user, login, logout } = usePrivy()
   const { isOpen, onOpen, onClose } = useDisclosure()
-  console.log("user", user)
 
   const logoutHandler = () => {
     logout()
