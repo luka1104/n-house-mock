@@ -13,6 +13,8 @@ import {
   ModalCloseButton,
   Button,
   HStack,
+  Image,
+  Center,
 } from "@chakra-ui/react"
 import { NextPage } from "next"
 import React from "react"
@@ -28,7 +30,8 @@ const House: NextPage = () => {
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <HStack>
+          <HStack position="relative" mt="20px" justifyContent="center" alignItems="center">
+            <Image position="absolute" left="0" ml="27px" w="10px" src="/icons/Back.png" onClick={onClose} />
             <Text fontSize="16px" fontWeight="700" fontFamily="Noto Sans" lineHeight="1.5">
               予約内容の入力
             </Text>
